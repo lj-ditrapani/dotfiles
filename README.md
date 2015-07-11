@@ -3,6 +3,5 @@ LJD dotfiles
 
 My personal dotfiles.  Simply simlinks the config files to the home directory.
 
-    cd ~
-    git clone
-    dotfiles/connect.rb
+    git clone git@github.com:lj-ditrapani/dotfiles.git
+    sh dotfiles/connect.rb
