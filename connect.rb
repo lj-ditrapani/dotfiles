@@ -13,6 +13,7 @@ files = %w(
 )
 dirs = files.map { |n| File.dirname n }.select { |d| d != '.' }
 dirs << '.vim/swap'
+dirs << '.vim/bundle'
 
 def mkdir(name)
   full_name = "#{Dir.home}/#{name}"

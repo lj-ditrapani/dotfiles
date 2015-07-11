@@ -1,4 +1,3 @@
-syntax on
 set nu          " show line numbers
 set nospell
 " Don't use smartindent
@@ -20,7 +19,9 @@ set fileencodings=ucs-bom,utf-8,default,latin1
 set printoptions=paper:letter
 set list        " Show white space
 "set gfn=Lucida_Console:h9:cANSI
-filetype plugin indent on
 colorscheme darkblue "darkblue delek murphy
 set directory=~/.vim/swap,.
+
 " execute pathogen#infect()
+syntax on
+filetype plugin indent on
