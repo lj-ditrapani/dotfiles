@@ -10,6 +10,7 @@ files = %w(
   .config/i3/config
   .config/i3status/config
   .vim/indent/ruby.vim
+  .vim/indent/coffee.vim
 )
 dirs = files.map { |n| File.dirname n }.select { |d| d != '.' }
 dirs << '.vim/swap'
