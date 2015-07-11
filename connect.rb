@@ -1,13 +1,15 @@
 #!/usr/bin/env ruby
 
+require 'fileutils'
+
 DOT_DIR = File.expand_path(File.dirname(__FILE__))
 
-dirs = %w(.config/i3 .config/i3status)
 files = %w(.zshrc .vimrc .config/i3/config .config/i3status/config)
+dirs = files.map {|n| File.dirname n}.select {|d| d != '.'}
 
 def mkdir(name)
   if not File.exist? "#{Dir.home}/#{name}"
-    Dir.mkdir(File.join(Dir.home, name))
+    FileUtils.mkdir_p(File.join(Dir.home, name))
   end
 end
 
