@@ -22,6 +22,6 @@ set list        " Show white space
 colorscheme darkblue "darkblue delek murphy
 set directory=~/.vim/swap,.
 
-" execute pathogen#infect()
+execute pathogen#infect()
 syntax on
 filetype plugin indent on
