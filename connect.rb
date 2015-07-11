@@ -4,7 +4,13 @@ require 'fileutils'
 
 DOT_DIR = File.expand_path(File.dirname(__FILE__))
 
-files = %w(.zshrc .vimrc .config/i3/config .config/i3status/config)
+files = %w(
+  .zshrc
+  .vimrc
+  .config/i3/config
+  .config/i3status/config
+  .vim/indent/ruby.vim
+)
 dirs = files.map {|n| File.dirname n}.select {|d| d != '.'}
 
 def mkdir(name)
