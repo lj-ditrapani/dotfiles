@@ -9,6 +9,7 @@ files = %w(
   .vimrc
   .config/i3/config
   .config/i3status/config
+  .config/user-dirs.dirs
   .vim/indent/ruby.vim
   .vim/indent/coffee.vim
 )
