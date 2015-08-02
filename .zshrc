@@ -15,6 +15,8 @@ alias asdf="setxkbmap dvorak"
 alias aoeu="setxkbmap us"
 alias gst='git status'
 
+bindkey "^R" history-incremental-search-backward
+
 # Turn on and off mouspad
 # xinput list  # Get a list of input devices
 # alias tpoff="synclient TouchpadOff=1"
