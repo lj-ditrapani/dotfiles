@@ -1,3 +1,18 @@
+" Setup Vundle
+set nocompatible    " put in vim mode, required for vundle
+filetype off        " required for vundle
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'rust-lang/rust.vim'
+" Plugin 'racer-rust/vim-racer'     " Must install racer first
+" (see lj-ditrapani/init/rust.sh for installation)
+call vundle#end()
+filetype plugin indent on    " required for vundle
+
+
 set nu          " show line numbers
 set nospell
 " Don't use smartindent
@@ -7,11 +22,10 @@ set autoindent
 set expandtab
 set softtabstop=4
 set shiftwidth=4
-set incsearch   " do incremental searching
+set incsearch       " do incremental searching
 set hlsearch
-set nocompatible
-set ic          " case insensitive
-set scs         " Smart Case (capital letters cause ic)
+set ic              " case insensitive
+set scs             " Smart Case (capital letters cause ic)
 set backspace=indent,eol,start
 set encoding=utf-8
 set fileencoding=utf-8
@@ -21,7 +35,4 @@ set list        " Show white space
 "set gfn=Lucida_Console:h9:cANSI
 colorscheme darkblue "darkblue delek murphy
 set directory=~/.vim/swap,.
-
-execute pathogen#infect()
 syntax on
-filetype plugin indent on
