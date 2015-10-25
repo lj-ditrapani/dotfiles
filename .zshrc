@@ -5,6 +5,8 @@ export PS1="%1~> "
 # Show [user@host] short_path > (for remote servers)
 # export PS1="[%n@%m] %1~> "
 export TERM=xterm-256color  # For weechat-curses
+# for racer; rust auto-completer
+export RUST_SRC_PATH=~/local/rustc-1.3.0/src
 
 alias l='ls -FXC --color'
 alias ll='l -Ahl'
