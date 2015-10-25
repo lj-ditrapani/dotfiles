@@ -7,7 +7,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'rust-lang/rust.vim'
-Plugin 'racer-rust/vim-racer'     " Must install racer first
+" Plugin 'racer-rust/vim-racer'     " Must install racer first
 " (see lj-ditrapani/init/rust.sh for installation)
 call vundle#end()
 filetype plugin indent on    " required for vundle
