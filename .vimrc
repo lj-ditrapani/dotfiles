@@ -7,8 +7,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'rust-lang/rust.vim'
-" Plugin 'racer-rust/vim-racer'     " Must install racer first
-" (see lj-ditrapani/init/rust.sh for installation)
+Plugin 'derekwyatt/vim-scala'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 filetype plugin indent on    " required for vundle
 
@@ -36,9 +36,3 @@ set list        " Show white space
 colorscheme darkblue "darkblue delek murphy
 set directory=~/.vim/swap,.
 syntax on
-
-
-" For rust racer
-" set hidden
-" let g:racer_cmd = "~/fun/racer/target/release/racer"
-" let $RUST_SRC_PATH="/home/ljd/local/rustc-1.3.0/src/"

@@ -7,6 +7,8 @@ export PS1="%1~> "
 export TERM=xterm-256color  # For weechat-curses
 # for racer; rust auto-completer
 export RUST_SRC_PATH=~/local/rustc-1.3.0/src
+export SCALA_HOME=~/local/scala
+export PATH=$PATH:$SCALA_HOME/bin
 
 alias l='ls -FXC --color'
 alias ll='l -Ahl'
@@ -29,14 +31,8 @@ bindkey "^R" history-incremental-search-backward
 # nginx_config=/etc/nginx
 
 jp=/home/ljd/usb
-ljdpy=${jp}/sw_dev/python
-ljdruby=${jp}/sw_dev/ruby
-learnruby=${jp}/learn_sw_dev/programmingLanguages/ruby
-www_dev=${jp}/sw_dev/www_dev
-cal=${jp}/calendar
 
 configFiles=${jp}/user_docs/configFiles
-ubuntu15=${jp}/user_docs/ubuntu15.04
 mountperm='-o uid=ljd,gid=ljd'
 console_16_bit=${jp}/sw_dev/coffeescript/16-bit-computer
 
