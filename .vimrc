@@ -36,3 +36,4 @@ set list        " Show white space
 colorscheme darkblue "darkblue delek murphy
 set directory=~/.vim/swap,.
 syntax on
+autocmd BufNewFile,BufRead Jakefile set filetype=javascript
