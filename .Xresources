@@ -1,3 +1,5 @@
 URxvt.foreground:   #c0d0ff
 URxvt.background:   #000000
 URxvt.cursorColor:  #ffffff
+URxvt.scrollBar:    false
+URxvt.saveLines:    5000
