@@ -3,3 +3,5 @@ URxvt.background:   #000000
 URxvt.cursorColor:  #ffffff
 URxvt.scrollBar:    false
 URxvt.saveLines:    5000
+URxvt.urgentOnBell: false
+URxvt.visualBell:   true
