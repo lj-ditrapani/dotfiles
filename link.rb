@@ -7,6 +7,7 @@ DOT_DIR = File.expand_path(File.dirname(__FILE__))
 files = %w(
   .zshrc
   .vimrc
+  .Xresources
   .config/i3/config
   .config/i3status/config
   .config/user-dirs.dirs
