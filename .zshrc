@@ -4,9 +4,6 @@ bindkey -v
 export PS1="%1~> "
 # Show [user@host] short_path > (for remote servers)
 # export PS1="[%n@%m] %1~> "
-export TERM=xterm-256color  # For weechat-curses
-# for racer; rust auto-completer
-export RUST_SRC_PATH=~/local/rustc-1.3.0/src
 export SCALA_HOME=~/local/scala
 export PATH=$PATH:$SCALA_HOME/bin:~/bin
 
@@ -29,11 +26,5 @@ bindkey "^R" history-incremental-search-backward
 # SERVER
 # html=/usr/share/nginx/html
 # nginx_config=/etc/nginx
-
-jp=/home/ljd/usb
-
-configFiles=${jp}/user_docs/configFiles
-mountperm='-o uid=ljd,gid=ljd'
-console_16_bit=${jp}/sw_dev/coffeescript/16-bit-computer
 
 starcraft=~/.wine/drive_c/Program\ Files\ \(x86\)/StarCraft
