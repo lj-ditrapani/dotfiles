@@ -33,7 +33,7 @@ set fileencodings=ucs-bom,utf-8,default,latin1
 set printoptions=paper:letter
 set list        " Show white space
 " set gfn=Lucida_Console:h9:cANSI
-colorscheme darkblue "darkblue delek murphy
+colorscheme elflord "darkblue delek murphy desert elflord
 set directory=~/.vim/swap,.
 syntax on
 autocmd BufNewFile,BufRead Jakefile set filetype=javascript
