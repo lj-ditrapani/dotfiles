@@ -30,7 +30,5 @@ bindkey "^R" history-incremental-search-backward
 starcraft=~/.wine/drive_c/Program\ Files\ \(x86\)/StarCraft
 
 # setxkbmap dvorak -option caps:escape
-# Can also do
+# or
 # xmodmap ~/dotfiles/.Xmodmap
-# Or edit /etc/default/keyboard
-# XKBOPTIONS="caps:escape"
