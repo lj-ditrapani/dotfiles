@@ -31,7 +31,6 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,default,latin1
 set printoptions=paper:letter
-set list        " Show white space
 " set gfn=Lucida_Console:h9:cANSI
 colorscheme elflord "darkblue delek murphy desert elflord
 set directory=~/.vim/swap,.
