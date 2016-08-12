@@ -11,6 +11,7 @@ files = %w(
   .config/i3/config
   .config/i3status/config
   .config/user-dirs.dirs
+  .gnupg/gpg-agent.conf
   .vim/indent/ruby.vim
   .vim/indent/coffee.vim
 )
