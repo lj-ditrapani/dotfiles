@@ -12,8 +12,9 @@ files = %w(
   .config/i3status/config
   .config/user-dirs.dirs
   .gnupg/gpg-agent.conf
-  .vim/indent/ruby.vim
   .vim/indent/coffee.vim
+  .vim/indent/ruby.vim
+  .vim/indent/typescript.vim
 )
 dirs = files.map { |n| File.dirname n }.select { |d| d != '.' }
 dirs << '.vim/swap'
