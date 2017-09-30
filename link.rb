@@ -8,6 +8,7 @@ files = %w(
   .zshrc
   .vimrc
   .Xresources
+  .gitconfig
   .config/i3/config
   .config/i3status/config
   .config/user-dirs.dirs

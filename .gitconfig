@@ -1,0 +1,7 @@
+[user]
+    name = Lyall Jonathan Di Trapani
+    email = lj.ditrapani@gmail.com
+[core]
+    editor = vim
+[push]
+    default = simple
