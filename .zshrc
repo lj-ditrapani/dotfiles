@@ -5,7 +5,7 @@ export PS1="%1~> "
 # Show [user@host] short_path > (for remote servers)
 # export PS1="[%n@%m] %1~> "
 export SCALA_HOME=~/local/scala
-export PATH=$PATH:$SCALA_HOME/bin:~/bin
+export PATH="$HOME/.rbenv/bin:$PATH:$SCALA_HOME/bin:~/bin"
 
 alias l='ls -FXC --color'
 alias ll='l -Ahl'
@@ -20,14 +20,8 @@ bindkey "^R" history-incremental-search-backward
 
 # Turn on and off mouspad
 # xinput list  # Get a list of input devices
-# alias tpoff="synclient TouchpadOff=1"
-# alias tpon="synclient TouchpadOff=0"
-
-# SERVER
-# html=/usr/share/nginx/html
-# nginx_config=/etc/nginx
-
-starcraft=~/.wine/drive_c/Program\ Files\ \(x86\)/StarCraft
+alias tpoff="synclient TouchpadOff=1"
+alias tpon="synclient TouchpadOff=0"
 
 # setxkbmap dvorak -option caps:escape
 # or
