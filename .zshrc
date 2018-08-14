@@ -14,7 +14,7 @@ alias grep='grep --color=auto'
 #alias uiop="sudo loadkeys dvorak"
 alias asdf="setxkbmap dvorak"
 alias aoeu="setxkbmap us"
-alias gst='git status'
+alias gst='git status -u'
 
 bindkey "^R" history-incremental-search-backward
 
