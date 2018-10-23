@@ -9,6 +9,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'rust-lang/rust.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
 call vundle#end()
 filetype plugin indent on    " required for vundle
 

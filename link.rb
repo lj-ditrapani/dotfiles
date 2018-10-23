@@ -16,6 +16,7 @@ files = %w(
   .vim/indent/coffee.vim
   .vim/indent/ruby.vim
   .vim/indent/typescript.vim
+  .vim/indent/javascript.vim
 )
 dirs = files.map { |n| File.dirname n }.select { |d| d != '.' }
 dirs << '.vim/swap'
