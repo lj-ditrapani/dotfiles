@@ -4,8 +4,7 @@ bindkey -v
 export PS1="%1~> "
 # Show [user@host] short_path > (for remote servers)
 # export PS1="[%n@%m] %1~> "
-export SCALA_HOME=~/local/scala
-export PATH="$HOME/.rbenv/bin:$PATH:$SCALA_HOME/bin:$HOME/bin"
+export PATH="$HOME/.rbenv/bin:$PATH:$HOME/bin"
 
 alias l='ls -FXC --color'
 alias ll='l -Ahl'
