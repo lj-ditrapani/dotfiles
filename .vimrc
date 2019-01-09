@@ -5,11 +5,12 @@ filetype off        " required for vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'rust-lang/rust.vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'rust-lang/rust.vim'
+Plugin 'udalov/kotlin-vim'
 call vundle#end()
 filetype plugin indent on    " required for vundle
 

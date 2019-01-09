@@ -14,9 +14,10 @@ files = %w(
   .config/user-dirs.dirs
   .gnupg/gpg-agent.conf
   .vim/indent/coffee.vim
+  .vim/indent/javascript.vim
+  .vim/indent/java.vim
   .vim/indent/ruby.vim
   .vim/indent/typescript.vim
-  .vim/indent/javascript.vim
 )
 dirs = files.map { |n| File.dirname n }.select { |d| d != '.' }
 dirs << '.vim/swap'
