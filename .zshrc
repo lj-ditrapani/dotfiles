@@ -25,3 +25,10 @@ alias tpon="synclient TouchpadOff=0"
 # setxkbmap dvorak -option caps:escape
 # or
 # xmodmap ~/dotfiles/.Xmodmap
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/ljd/.sdkman"
+[[ -s "/home/ljd/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ljd/.sdkman/bin/sdkman-init.sh"
