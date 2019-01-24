@@ -14,6 +14,7 @@ alias grep='grep --color=auto'
 alias asdf="setxkbmap dvorak"
 alias aoeu="setxkbmap us"
 alias gst='git status -u'
+alias vim='~/local/nvim.appimage'
 
 bindkey "^R" history-incremental-search-backward
 

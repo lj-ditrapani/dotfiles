@@ -11,6 +11,7 @@ files = %w(
   .gitconfig
   .config/i3/config
   .config/i3status/config
+  .config/nvim/init.vim
   .config/user-dirs.dirs
   .gnupg/gpg-agent.conf
   .vim/indent/coffee.vim
@@ -18,6 +19,11 @@ files = %w(
   .vim/indent/java.vim
   .vim/indent/ruby.vim
   .vim/indent/typescript.vim
+  .config/nvim/indent/coffee.vim
+  .config/nvim/indent/javascript.vim
+  .config/nvim/indent/java.vim
+  .config/nvim/indent/ruby.vim
+  .config/nvim/indent/typescript.vim
 )
 dirs = files.map { |n| File.dirname n }.select { |d| d != '.' }
 dirs << '.vim/swap'
