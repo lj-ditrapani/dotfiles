@@ -6,7 +6,6 @@ DOT_DIR = File.expand_path(File.dirname(__FILE__))
 
 files = %w(
   .zshrc
-  .vimrc
   .Xresources
   .gitconfig
   .config/i3/config
@@ -14,11 +13,6 @@ files = %w(
   .config/nvim/init.vim
   .config/user-dirs.dirs
   .gnupg/gpg-agent.conf
-  .vim/indent/coffee.vim
-  .vim/indent/javascript.vim
-  .vim/indent/java.vim
-  .vim/indent/ruby.vim
-  .vim/indent/typescript.vim
   .config/nvim/indent/coffee.vim
   .config/nvim/indent/javascript.vim
   .config/nvim/indent/java.vim
