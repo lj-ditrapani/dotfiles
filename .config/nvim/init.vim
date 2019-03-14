@@ -15,6 +15,8 @@ set nospell
 " causes copy/paste issues
 set autoindent
 set expandtab
+set softtabstop=4
+set shiftwidth=4
 set incsearch       " do incremental searching
 set hlsearch
 set ic              " case insensitive

@@ -14,9 +14,10 @@ files = %w(
   .config/user-dirs.dirs
   .gnupg/gpg-agent.conf
   .config/nvim/indent/coffee.vim
-  .config/nvim/indent/javascript.vim
   .config/nvim/indent/java.vim
+  .config/nvim/indent/javascript.vim
   .config/nvim/indent/kotlin.vim
+  .config/nvim/indent/markdown.vim
   .config/nvim/indent/ruby.vim
   .config/nvim/indent/typescript.vim
 )
