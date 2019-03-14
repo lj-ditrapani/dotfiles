@@ -22,6 +22,7 @@ files = %w(
   .config/nvim/indent/coffee.vim
   .config/nvim/indent/javascript.vim
   .config/nvim/indent/java.vim
+  .config/nvim/indent/kotlin.vim
   .config/nvim/indent/ruby.vim
   .config/nvim/indent/typescript.vim
 )
