@@ -1,5 +1,4 @@
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'VundleVim/Vundle.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
