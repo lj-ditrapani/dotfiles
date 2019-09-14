@@ -31,3 +31,4 @@ set directory=~/.vim/swap,.
 syntax on
 autocmd BufNewFile,BufRead Jakefile set filetype=javascript
 autocmd BufNewFile,BufRead *.adoc setf asciidoc
+autocmd BufNewFile,BufRead *.avsc setf json
