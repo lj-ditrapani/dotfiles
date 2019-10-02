@@ -32,3 +32,4 @@ syntax on
 autocmd BufNewFile,BufRead Jakefile set filetype=javascript
 autocmd BufNewFile,BufRead *.adoc setf asciidoc
 autocmd BufNewFile,BufRead *.avsc setf json
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
