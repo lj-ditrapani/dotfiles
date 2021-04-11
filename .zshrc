@@ -4,7 +4,6 @@ bindkey -v
 export PS1="%1~> "
 # Show [user@host] short_path > (for remote servers)
 # export PS1="[%n@%m] %1~> "
-export PATH="$HOME/.rbenv/bin:$PATH:$HOME/bin"
 
 alias l='ls -FXC --color'
 alias ll='l -Ahl'
@@ -30,6 +29,8 @@ alias tpon="synclient TouchpadOff=0"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/ljd/.sdkman"
-[[ -s "/home/ljd/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ljd/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.rbenv/bin:$HOME/.pyenv/bin:$PATH:$HOME/bin"
+alias pyenvinit='eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"'
