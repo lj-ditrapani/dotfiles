@@ -34,3 +34,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export PATH="$HOME/.rbenv/bin:$HOME/.pyenv/bin:$PATH:$HOME/bin"
 alias pyenvinit='eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"'
+
+export HISTSIZE=50000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
