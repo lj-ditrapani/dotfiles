@@ -3,6 +3,7 @@ set $mod Mod4
 input type:keyboard {
     xkb_layout us
     xkb_variant dvorak
+    xkb_options caps:escape
 }
 
 # font for window titles. ISO 10646 = Unicode
