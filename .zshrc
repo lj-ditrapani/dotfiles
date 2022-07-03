@@ -39,6 +39,9 @@ export HISTSIZE=50000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
 
+# start ssh agent
+# eval $(ssh-agent)
+
 # Using an external monitor
 # swaymsg -t get_outputs
 # swaymsg output eDP-1 disable
