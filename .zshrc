@@ -38,3 +38,7 @@ alias pyenvinit='eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"'
 export HISTSIZE=50000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
+
+# Using an external monitor
+# swaymsg -t get_outputs
+# swaymsg output eDP-1 disable
