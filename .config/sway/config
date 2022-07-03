@@ -23,7 +23,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+r exec dmenu_run
+bindsym $mod+r exec wofi --show run
 
 #
 # Moving around:
