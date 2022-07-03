@@ -150,4 +150,4 @@ bar {
 
 include /etc/sway/config.d/*
 
-font pango:Fira Code Regular 8
+font pango:Terminus 8
