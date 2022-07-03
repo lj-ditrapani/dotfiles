@@ -150,4 +150,4 @@ bar {
 
 include /etc/sway/config.d/*
 
-font pango:Terminus 8
+font pango:Anonymous Pro 9
