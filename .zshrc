@@ -10,10 +10,9 @@ alias ll='l -Ahl'
 alias grep='grep --color=auto'
 #alias gcrl="sudo loadkeys us"
 #alias uiop="sudo loadkeys dvorak"
-alias asdf="setxkbmap dvorak"
-alias aoeu="setxkbmap us"
 alias gst='git status -u'
 alias vim='nvim'
+alias calh="ncal -b3"
 
 bindkey "^R" history-incremental-search-backward
 
