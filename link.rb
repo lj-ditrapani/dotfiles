@@ -8,7 +8,7 @@ files = %w(
   .zshrc
   .Xresources
   .gitconfig
-  .config/i3/config
+  .config/sway/config
   .config/i3status/config
   .config/nvim/init.vim
   .config/user-dirs.dirs
