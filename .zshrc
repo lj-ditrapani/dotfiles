@@ -39,8 +39,9 @@ export HISTSIZE=50000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
 
-# start ssh agent
-# eval $(ssh-agent)
+alias swup="eval $(ssh-agent) && sway"
+alias disableLaptopMonitor="swaymsg output eDP-1 disable"
+alias enableLaptopMonitor="swaymsg output eDP-1 enable"
 
 # Using an external monitor
 # swaymsg -t get_outputs
