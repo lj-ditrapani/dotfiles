@@ -6,7 +6,6 @@ DOT_DIR = File.expand_path(File.dirname(__FILE__))
 
 files = %w(
   .zshrc
-  .Xresources
   .gitconfig
   .config/sway/config
   .config/kitty/kitty.conf
