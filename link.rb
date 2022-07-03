@@ -9,6 +9,7 @@ files = %w(
   .Xresources
   .gitconfig
   .config/sway/config
+  .config/kitty/kitty.conf
   .config/i3status/config
   .config/nvim/init.vim
   .config/user-dirs.dirs
