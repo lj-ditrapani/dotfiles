@@ -21,10 +21,6 @@ bindkey "^R" history-incremental-search-backward
 alias tpoff="synclient TouchpadOff=1"
 alias tpon="synclient TouchpadOff=0"
 
-# setxkbmap dvorak -option caps:escape
-# or
-# xmodmap ~/dotfiles/.Xmodmap
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
