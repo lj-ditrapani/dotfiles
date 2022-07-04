@@ -11,7 +11,7 @@ set $down j
 set $up k
 set $right l
 
-set $term kitty
+set $term kitty --single-instance
 
 # Use Mouse+$mod to drag floating windows to their wanted position
     floating_modifier $mod normal
