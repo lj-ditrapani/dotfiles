@@ -1,7 +1,7 @@
 [user]
-    name = Lyall Jonathan Di Trapani
-    email = lj.ditrapani@gmail.com
-	signingkey = B84FC5E9A74B2362C1CB0329B051A1E0D3D8AAE5
+    name = Jonathan Di Trapani
+    email = jonathan.ditrapani@statflo.com
+	signingkey = 5B39BB469E1A67E840ACDF5B3952ED766D23DEE5
 [core]
     editor = nvim
 [push]
