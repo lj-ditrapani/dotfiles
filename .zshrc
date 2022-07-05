@@ -53,3 +53,6 @@ alias ssh-agent-start='ssh-agent -t 2h > "$XDG_RUNTIME_DIR/ssh-agent.env"'
 if [ -f $XDG_RUNTIME_DIR/ssh-agent.env ]; then
     source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 fi
+
+# alias copyemail='cat ~/statflo/notes/email.txt | wl-copy'
+alias copyemail='cat ~/statflo/notes/email.txt | xsel -ib'
