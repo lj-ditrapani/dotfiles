@@ -7,7 +7,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'udalov/kotlin-vim'
 call plug#end()
 
-set nu          " show line numbers
+set nu              " show line numbers
 set nospell
 " Don't use smartindent
 " Not compatible with per-file indents
@@ -33,3 +33,7 @@ autocmd BufNewFile,BufRead Jakefile set filetype=javascript
 autocmd BufNewFile,BufRead *.adoc setf asciidoc
 autocmd BufNewFile,BufRead *.avsc setf json
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+hi clear SpellCap
+hi SpellCap cterm=underline "ctermfg=203 guifg=#ff5f5f
+hi SpellBad ctermfg=0 "guifg=#ff5f5f
