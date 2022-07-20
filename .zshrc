@@ -42,6 +42,8 @@ swup() {
 alias disableLaptopMonitor="swaymsg output eDP-1 disable"
 alias enableLaptopMonitor="swaymsg output eDP-1 enable"
 
+alias vscode="code --enable-features=UseOzonePlatform --ozone-platform=wayland --log debug"
+
 # Using an external monitor
 # swaymsg -t get_outputs
 # swaymsg output eDP-1 disable
