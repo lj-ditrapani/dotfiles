@@ -108,7 +108,7 @@ bindsym $mod+a focus parent
 # restart sway inplace (preserves your layout/session, can be used to upgrade sway)
 bindsym $mod+Shift+P restart
 # exit sway (logs you out of your session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaymsg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
