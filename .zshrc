@@ -47,3 +47,6 @@ alias vscode="code --enable-features=UseOzonePlatform --ozone-platform=wayland -
 # Using an external monitor
 # swaymsg -t get_outputs
 # swaymsg output eDP-1 disable
+
+# Perhaps needed for screen sharing?
+export XDG_CURRENT_DESKTOP=sway
