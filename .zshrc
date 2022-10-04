@@ -28,7 +28,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$HOME/.rbenv/bin:$PYENV_ROOT/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PYENV_ROOT/bin:/usr/local/go/bin:$HOME/.local/bin:$PATH"
 alias pyenvinit='eval "$(pyenv init -)"'
 alias opaminit='eval $(opam env)'
 
@@ -56,3 +56,14 @@ fi
 
 # alias copyemail='cat ~/statflo/notes/email.txt | wl-copy'
 alias copyemail='cat ~/statflo/notes/email.txt | xsel -ib'
+
+export JAVA_HOME_08=~/.sdkman/candidates/java/8.0.292-zulu
+export JAVA_HOME_10=~/.sdkman/candidates/java/10.0.2-open
+export JAVA_HOME_11=~/.sdkman/candidates/java/11.0.11-zulu
+export JAVA_HOME_12=~/.sdkman/candidates/java/12.0.2-open
+export JAVA_HOME_13=~/.sdkman/candidates/java/13.0.2.j9-adpt
+export JAVA_HOME_14=~/.sdkman/candidates/java/14.0.2.j9-adpt
+export JAVA_HOME_16=~/.sdkman/candidates/java/16.0.0.fx-zulu
+export JAVA_HOME_18=~/.sdkman/candidates/java/18.0.2-tem
+
+export SPRING_PROFILES_ACTIVE=local
