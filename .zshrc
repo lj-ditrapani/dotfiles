@@ -27,8 +27,9 @@ export NVM_DIR="$HOME/.nvm"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export PATH="$HOME/.rbenv/bin:$HOME/.pyenv/bin:$PATH:$HOME/bin"
-alias pyenvinit='eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"'
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$HOME/.rbenv/bin:$PYENV_ROOT/bin:$PATH:$HOME/bin"
+alias pyenvinit='eval "$(pyenv init -)"'
 
 export HISTSIZE=50000
 export SAVEHIST=$HISTSIZE
