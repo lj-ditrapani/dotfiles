@@ -8,6 +8,7 @@ files = %w(
   .zshrc
   .gitconfig
   .xinitrc
+  .Xresources
   .config/sway/config
   .config/i3/config
   .config/kitty/kitty.conf
