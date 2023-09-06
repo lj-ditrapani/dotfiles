@@ -1,4 +1,4 @@
-LJD dotfiles
+V dotfiles
 ===============================================================================
 
 My personal dotfiles.  Simply simlinks the config files to the home directory.
