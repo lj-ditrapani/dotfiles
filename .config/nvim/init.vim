@@ -1,12 +1,3 @@
-call plug#begin('~/.local/share/nvim/plugged')
-Plug 'derekwyatt/vim-scala'
-Plug 'kchmck/vim-coffee-script'
-Plug 'leafgarland/typescript-vim'
-Plug 'pangloss/vim-javascript'
-Plug 'rust-lang/rust.vim'
-Plug 'udalov/kotlin-vim'
-call plug#end()
-
 set nu              " show line numbers
 set nospell
 " Don't use smartindent
