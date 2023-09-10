@@ -44,8 +44,6 @@ alias disableLaptopMonitor="swaymsg output eDP-1 disable"
 alias enableLaptopMonitor="swaymsg output eDP-1 enable"
 alias mirrormonitor="xrandr --output HDMI-0 --same-as DP-2"
 
-alias vscode="code --enable-features=UseOzonePlatform --ozone-platform=wayland --log debug"
-
 # Using an external monitor
 # swaymsg -t get_outputs
 # swaymsg output eDP-1 disable
