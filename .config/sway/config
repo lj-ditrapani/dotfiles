@@ -22,7 +22,7 @@ bindsym $mod+Return exec $term
 # kill focused window
 bindsym $mod+q kill
 
-# start dmenu (a program launcher)
+# start a program launcher
 bindsym $mod+r exec wofi --show run
 
 #
