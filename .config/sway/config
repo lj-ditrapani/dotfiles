@@ -10,9 +10,10 @@ set $right u
 
 set $term kitty --single-instance
 
+# Use Mouse to drag floating windows to their wanted position
+# floating_modifier ctrl+shift normal
+
 mode "swaymode" {
-    # Use Mouse to drag floating windows to their wanted position
-    floating_modifier m normal
     # start a terminal
     bindsym Return exec $term
     # kill focused window
