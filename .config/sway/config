@@ -3,8 +3,6 @@ input type:keyboard {
     xkb_options caps:escape
 }
 
-set $mod Mod4
-
 set $left o
 set $down e
 set $up period
@@ -12,122 +10,89 @@ set $right u
 
 set $term kitty --single-instance
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-    floating_modifier $mod normal
-
-# start a terminal
-bindsym $mod+Return exec $term
-
-# kill focused window
-bindsym $mod+q kill
-
-# start a program launcher
-bindsym $mod+r exec wofi --show run
-
-#
-# Moving around:
-#
+mode "swaymode" {
+    # Use Mouse to drag floating windows to their wanted position
+    floating_modifier m normal
+    # start a terminal
+    bindsym Return exec $term
+    # kill focused window
+    bindsym q kill
+    # start a program launcher
+    bindsym r exec wofi --show run
+    #
+    # Moving around:
+    #
     # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+    bindsym $left focus left
+    bindsym $down focus down
+    bindsym $up focus up
+    bindsym $right focus right
     # Or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
+    bindsym Left focus left
+    bindsym Down focus down
+    bindsym Up focus up
+    bindsym Right focus right
 
     # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+    bindsym Shift+$left move left
+    bindsym Shift+$down move down
+    bindsym Shift+$up move up
+    bindsym Shift+$right move right
     # Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
+    bindsym Shift+Left move left
+    bindsym Shift+Down move down
+    bindsym Shift+Up move up
+    bindsym Shift+Right move right
 
     # split in horizontal orientation
-    bindsym $mod+z split h
-
+    bindsym z split h
     # split in vertical orientation
-    bindsym $mod+v split v
-
-    # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    bindsym v split v
 
     # change container layout (stacked, tabbed, default)
-    bindsym $mod+s layout stacking
-    bindsym $mod+m layout tabbed
-    bindsym $mod+d layout default
-    bindsym $mod+t layout toggle split
+    bindsym s layout stacking
+    bindsym d layout default
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym Shift+space floating toggle
+    # change focus between tiling / floating windows
+    bindsym space focus mode_toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+    # focus the parent container
+    bindsym a focus parent
 
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-#bindcode $mod+d focus child
-
-#
-# Workspaces:
-#
+    #
+    # Workspaces:
+    #
     # Switch to workspace
-    bindsym $mod+apostrophe workspace number 1
-    bindsym $mod+comma workspace number 2
-    bindsym $mod+p workspace number 3
-    bindsym $mod+y workspace number 4
-    bindsym $mod+g workspace number 5
-    bindsym $mod+c workspace number 6
-    bindsym $mod+l workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
+    bindsym apostrophe workspace number 1
+    bindsym comma workspace number 2
+    bindsym p workspace number 3
+    bindsym y workspace number 4
+    bindsym f workspace number 5
+    bindsym g workspace number 6
+    bindsym c workspace number 7
+    bindsym l workspace number 8
     # Move focused container to workspace
-    bindsym $mod+Shift+apostrophe move container to workspace number 1
-    bindsym $mod+Shift+comma move container to workspace number 2
-    bindsym $mod+Shift+p move container to workspace number 3
-    bindsym $mod+Shift+y move container to workspace number 4
-    bindsym $mod+Shift+g move container to workspace number 5
-    bindsym $mod+Shift+c move container to workspace number 6
-    bindsym $mod+Shift+l move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10
+    bindsym Shift+apostrophe move container to workspace number 1
+    bindsym Shift+comma move container to workspace number 2
+    bindsym Shift+p move container to workspace number 3
+    bindsym Shift+y move container to workspace number 4
+    bindsym Shift+f move container to workspace number 5
+    bindsym Shift+g move container to workspace number 6
+    bindsym Shift+c move container to workspace number 7
+    bindsym Shift+l move container to workspace number 8
 
     # Reload the configuration file
-    bindsym $mod+Shift+X reload
-# restart sway inplace (preserves your layout/session, can be used to upgrade sway)
-# bindsym $mod+Shift+W restart
-# exit sway (logs you out of your session)
-# bindsym $mod+Shift+e exec swaymsg exit
+    bindsym Shift+X reload
+    # restart sway inplace (preserves your layout/session, can be used to upgrade sway)
+    # bindsym Shift+W restart
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym o resize shrink width 10 px or 10 ppt
-        bindsym e resize grow height 10 px or 10 ppt
-        bindsym period resize shrink height 10 px or 10 ppt
-        bindsym u resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym Escape mode "default"
 }
 
-# bindsym $mod+p mode "resize"
+bindsym Super_L mode "swaymode"
+bindsym Super_R mode "swaymode"
 
 #
 # Status Bar:
