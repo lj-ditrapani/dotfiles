@@ -11,7 +11,7 @@ set $right u
 set $term kitty --single-instance
 
 # Use Mouse to drag floating windows to their wanted position
-# floating_modifier ctrl+shift normal
+floating_modifier mod4 normal
 
 mode "swaymode" {
     # start a terminal
