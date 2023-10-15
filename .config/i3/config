@@ -35,6 +35,8 @@ exec --no-startup-id nm-applet
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 
+set $mod Mod4
+
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $left o
@@ -43,7 +45,7 @@ set $up period
 set $right u
 
 # use Mouse+Mod4 to drag floating windows to their wanted position
-floating_modifier Mod4
+floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -52,26 +54,41 @@ tiling_drag modifier titlebar
 # start a terminal
 set $term kitty --single-instance
 
+bindsym $mod+Return exec $term
+# kill focused window
+bindsym $mod+q kill
+# start dmenu (a program launcher)
+bindsym $mod+r exec --no-startup-id dmenu_run
+# A more modern dmenu replacement is rofi:
+# bindsym $mod+d exec "rofi -modi drun,run -show drun"
+
+# change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+d layout default
+
+# switch to workspace
+bindsym $mod+apostrophe workspace number 1
+bindsym $mod+comma workspace number 2
+bindsym $mod+p workspace number 3
+bindsym $mod+y workspace number 4
+bindsym $mod+f workspace number 5
+bindsym $mod+g workspace number 6
+bindsym $mod+c workspace number 7
+bindsym $mod+l workspace number 8
+
 mode "i3mode" {
-    bindsym Return exec $term
-    # kill focused window
-    bindsym q kill
-    # start dmenu (a program launcher)
-    bindsym r exec --no-startup-id dmenu_run
-    # A more modern dmenu replacement is rofi:
-    # bindsym d exec "rofi -modi drun,run -show drun"
-
-    # change focus
-    bindsym $left focus left
-    bindsym $down focus down
-    bindsym $up focus up
-    bindsym $right focus right
-
-    # alternatively, you can use the cursor keys:
-    bindsym Left focus left
-    bindsym Down focus down
-    bindsym Up focus up
-    bindsym Right focus right
 
     # move focused window
     bindsym Shift+$left move left
@@ -91,58 +108,29 @@ mode "i3mode" {
     # split in vertical orientation
     bindsym v split v
 
-    # change container layout (stacked, tabbed, toggle split)
-    bindsym s layout stacking
-    bindsym d layout default
-
     # toggle tiling / floating
     bindsym Shift+space floating toggle
 
     # change focus between tiling / floating windows
     bindsym space focus mode_toggle
 
-    # focus the parent container
-    bindsym a focus parent
-
-    # Define names for default workspaces for which we configure key bindings later on.
-    # We use variables to avoid repeating the names in multiple places.
-    set $ws1 "1"
-    set $ws2 "2"
-    set $ws3 "3"
-    set $ws4 "4"
-    set $ws5 "5"
-    set $ws6 "6"
-    set $ws7 "7"
-    set $ws8 "8"
-
-    # switch to workspace
-    bindsym apostrophe workspace number $ws1
-    bindsym comma workspace number $ws2
-    bindsym p workspace number $ws3
-    bindsym y workspace number $ws4
-    bindsym f workspace number $ws5
-    bindsym g workspace number $ws6
-    bindsym c workspace number $ws7
-    bindsym l workspace number $ws8
-
     # move focused container to workspace
-    bindsym Shift+apostrophe move container to workspace number $ws1
-    bindsym Shift+comma move container to workspace number $ws2
-    bindsym Shift+p move container to workspace number $ws3
-    bindsym Shift+y move container to workspace number $ws4
-    bindsym Shift+f move container to workspace number $ws5
-    bindsym Shift+g move container to workspace number $ws6
-    bindsym Shift+c move container to workspace number $ws7
-    bindsym Shift+l move container to workspace number $ws8
+    bindsym Shift+apostrophe move container to workspace number 1
+    bindsym Shift+comma move container to workspace number 2
+    bindsym Shift+p move container to workspace number 3
+    bindsym Shift+y move container to workspace number 4
+    bindsym Shift+f move container to workspace number 5
+    bindsym Shift+g move container to workspace number 6
+    bindsym Shift+c move container to workspace number 7
+    bindsym Shift+l move container to workspace number 8
 
     # reload the configuration file
-    bindsym Shift+x reload
+    # bindsym Shift+x reload
 
     bindsym Escape mode "default"
 }
 
-bindsym Super_L mode "i3mode"
-bindsym Super_R mode "i3mode"
+bindsym $mod+a mode "i3mode"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
