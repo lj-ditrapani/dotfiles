@@ -21,16 +21,21 @@ bindsym $mod+Return exec $term
 bindsym $mod+q kill
 # start a program launcher
 bindsym $mod+r exec wofi --show run
+
 # Move your focus around
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
+
 # Or use $mod+[up|down|left|right]
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
+# split in vertical orientation
+bindsym $mod+v split v
 
 # change container layout (stacked, tabbed, default)
 bindsym $mod+s layout stacking
@@ -47,11 +52,46 @@ bindsym $mod+c workspace number 7
 bindsym $mod+l workspace number 8
 
 mode "swaymode" {
+    # start a terminal
+    bindsym Return exec $term
+    # kill focused window
+    bindsym q kill
+
+    # Move your focus around
+    bindsym $left focus left
+    bindsym $down focus down
+    bindsym $up focus up
+    bindsym $right focus right
+
+    # Or use [up|down|left|right]
+    bindsym Left focus left
+    bindsym Down focus down
+    bindsym Up focus up
+    bindsym Right focus right
+
+    # split in vertical orientation
+    bindsym v split v
+
+    # change container layout (stacked, tabbed, default)
+    bindsym s layout stacking
+    bindsym d layout default
+
+    # Switch to workspace
+    bindsym apostrophe workspace number 1
+    bindsym comma workspace number 2
+    bindsym p workspace number 3
+    bindsym y workspace number 4
+    bindsym f workspace number 5
+    bindsym g workspace number 6
+    bindsym c workspace number 7
+    bindsym l workspace number 8
+
     # Move the focused window with the same, but add Shift
     bindsym Shift+$left move left
     bindsym Shift+$down move down
     bindsym Shift+$up move up
     bindsym Shift+$right move right
+
     # Ditto, with arrow keys
     bindsym Shift+Left move left
     bindsym Shift+Down move down
@@ -60,8 +100,6 @@ mode "swaymode" {
 
     # split in horizontal orientation
     bindsym z split h
-    # split in vertical orientation
-    bindsym v split v
 
     # Toggle the current focus between tiling and floating mode
     bindsym Shift+space floating toggle
@@ -80,8 +118,6 @@ mode "swaymode" {
 
     # Reload the configuration file
     # bindsym Shift+X reload
-    # restart sway inplace (preserves your layout/session, can be used to upgrade sway)
-    # bindsym Shift+W restart
 
     bindsym Escape mode "default"
 }
