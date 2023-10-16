@@ -28,7 +28,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$HOME/.rbenv/bin:$PYENV_ROOT/bin:$HOME/.local/bin:$PATH:$HOME/bin"
+export PATH="$HOME/.rbenv/bin:$PYENV_ROOT/bin:$HOME/.local/bin:$PATH"
 alias pyenvinit='eval "$(pyenv init -)"'
 
 export HISTSIZE=50000
