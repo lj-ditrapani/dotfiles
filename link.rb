@@ -11,6 +11,7 @@ files = %w(
   .Xresources
   .config/sway/config
   .config/i3/config
+  .config/i3status/config
   .config/kitty/kitty.conf
   .config/nvim/init.vim
   .config/user-dirs.dirs
