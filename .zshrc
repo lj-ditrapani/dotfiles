@@ -48,5 +48,7 @@ alias mirrormonitor="xrandr --output HDMI-0 --same-as DP-2"
 # swaymsg -t get_outputs
 # swaymsg output eDP-1 disable
 
-# Perhaps needed for screen sharing?
-export XDG_CURRENT_DESKTOP=sway
+alias ssh-agent-start='ssh-agent -t 2h > "$XDG_RUNTIME_DIR/ssh-agent.env"'
+if [ -f $XDG_RUNTIME_DIR/ssh-agent.env ]; then
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+fi
