@@ -74,12 +74,31 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+# move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
 # split in vertical orientation
 bindsym $mod+v split v
+# split in horizontal orientation
+bindsym $mod+z split h
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+d layout default
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
 
 # switch to workspace
 bindsym $mod+apostrophe workspace number 1
@@ -91,77 +110,18 @@ bindsym $mod+g workspace number 6
 bindsym $mod+c workspace number 7
 bindsym $mod+l workspace number 8
 
-mode "i3mode" {
-    bindsym Return exec $term
-    # kill focused window
-    bindsym q kill
+# move focused container to workspace
+bindsym $mod+Shift+apostrophe move container to workspace number 1
+bindsym $mod+Shift+comma move container to workspace number 2
+bindsym $mod+Shift+p move container to workspace number 3
+bindsym $mod+Shift+y move container to workspace number 4
+bindsym $mod+Shift+f move container to workspace number 5
+bindsym $mod+Shift+g move container to workspace number 6
+bindsym $mod+Shift+c move container to workspace number 7
+bindsym $mod+Shift+l move container to workspace number 8
 
-    # change focus
-    bindsym $left focus left
-    bindsym $down focus down
-    bindsym $up focus up
-    bindsym $right focus right
-
-    # alternatively, you can use the cursor keys:
-    bindsym Left focus left
-    bindsym Down focus down
-    bindsym Up focus up
-    bindsym Right focus right
-
-    # split in vertical orientation
-    bindsym v split v
-
-    # change container layout (stacked, tabbed, toggle split)
-    bindsym s layout stacking
-    bindsym d layout default
-
-    # switch to workspace
-    bindsym apostrophe workspace number 1
-    bindsym comma workspace number 2
-    bindsym p workspace number 3
-    bindsym y workspace number 4
-    bindsym f workspace number 5
-    bindsym g workspace number 6
-    bindsym c workspace number 7
-    bindsym l workspace number 8
-
-    # move focused window
-    bindsym Shift+$left move left
-    bindsym Shift+$down move down
-    bindsym Shift+$up move up
-    bindsym Shift+$right move right
-
-    # alternatively, you can use the cursor keys:
-    bindsym Shift+Left move left
-    bindsym Shift+Down move down
-    bindsym Shift+Up move up
-    bindsym Shift+Right move right
-
-    # split in horizontal orientation
-    bindsym z split h
-
-    # toggle tiling / floating
-    bindsym Shift+space floating toggle
-    # change focus between tiling / floating windows
-    bindsym space focus mode_toggle
-
-    # move focused container to workspace
-    bindsym Shift+apostrophe move container to workspace number 1
-    bindsym Shift+comma move container to workspace number 2
-    bindsym Shift+p move container to workspace number 3
-    bindsym Shift+y move container to workspace number 4
-    bindsym Shift+f move container to workspace number 5
-    bindsym Shift+g move container to workspace number 6
-    bindsym Shift+c move container to workspace number 7
-    bindsym Shift+l move container to workspace number 8
-
-    # reload the configuration file
-    # bindsym Shift+x reload
-
-    bindsym Escape mode "default"
-}
-
-bindsym $mod+a mode "i3mode"
+# reload the configuration file
+# bindsym Shift+x reload
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
