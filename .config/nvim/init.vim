@@ -38,7 +38,7 @@ hi clear SpellCap
 hi SpellCap cterm=underline "ctermfg=203 guifg=#ff5f5f
 hi SpellBad ctermfg=0 "guifg=#ff5f5f
 
-:nnoremap h <Space>
-:nnoremap j <Space>
-:nnoremap k <Space>
-:nnoremap l <Space>
+:nnoremap h <Esc>
+:nnoremap j <Esc>
+:nnoremap k <Esc>
+:nnoremap l <Esc>
