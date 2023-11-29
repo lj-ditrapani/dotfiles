@@ -37,3 +37,8 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 hi clear SpellCap
 hi SpellCap cterm=underline "ctermfg=203 guifg=#ff5f5f
 hi SpellBad ctermfg=0 "guifg=#ff5f5f
+
+:nnoremap h <Space>
+:nnoremap j <Space>
+:nnoremap k <Space>
+:nnoremap l <Space>
