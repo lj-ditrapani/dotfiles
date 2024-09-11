@@ -24,9 +24,7 @@ set backspace=indent,eol,start
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,default,latin1
-set printoptions=paper:letter
 " set gfn=Lucida_Console:h9:cANSI
-colorscheme elflord "darkblue delek murphy desert elflord
 set directory=~/.vim/swap,.
 syntax on
 autocmd BufNewFile,BufRead Jakefile set filetype=javascript
