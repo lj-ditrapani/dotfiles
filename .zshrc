@@ -30,6 +30,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOME/.rbenv/bin:$PYENV_ROOT/bin:$HOME/.local/bin:$PATH"
 alias pyenvinit='eval "$(pyenv init -)"'
+alias opaminit='eval $(opam env)'
 
 export HISTSIZE=50000
 export SAVEHIST=$HISTSIZE
