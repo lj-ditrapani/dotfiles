@@ -6,15 +6,11 @@ dot_dir = Path(__file__).parent
 
 files = [
     ".zshrc",
+    ".zprofile",
     ".gitconfig",
-    ".xinitrc",
-    ".Xresources",
-    ".config/sway/config",
-    ".config/i3/config",
-    ".config/i3status/config",
     ".config/kitty/kitty.conf",
     ".config/nvim/init.vim",
-    ".config/user-dirs.dirs",
+    ".docker/config.json",
     ".gnupg/gpg-agent.conf",
     ".config/nvim/indent/coffee.vim",
     ".config/nvim/indent/java.vim",
