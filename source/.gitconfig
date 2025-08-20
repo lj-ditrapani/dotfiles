@@ -1,7 +1,7 @@
 [user]
     name = Lyall Jonathan Di Trapani
-    email = lj.ditrapani@gmail.com
-    signingkey = B84FC5E9A74B2362C1CB0329B051A1E0D3D8AAE5
+    email = jonathan.ditrapani@assured.claims
+    signingkey = 2A173E89536BD3811A8F8C641A99296D69D664D2
 [core]
     editor = nvim
 [push]
