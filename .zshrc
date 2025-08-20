@@ -21,8 +21,10 @@ bindkey "^R" history-incremental-search-backward
 alias tpoff="synclient TouchpadOff=1"
 alias tpon="synclient TouchpadOff=0"
 
+export EDITOR="nvim"
+
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"  # This loads nvm
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -35,6 +37,12 @@ alias opaminit='eval $(opam env)'
 export HISTSIZE=50000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
+
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    autoload -Uz compinit
+    compinit
+fi
 
 swup() {
     eval $(ssh-agent)
