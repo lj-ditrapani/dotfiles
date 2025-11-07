@@ -15,6 +15,7 @@ files = [
     ".config/fish/config.fish",
     ".docker/config.json",
     ".gnupg/gpg-agent.conf",
+    ".config/aerospace/aerospace.toml",
     ".config/nvim/indent/coffee.vim",
     ".config/nvim/indent/java.vim",
     ".config/nvim/indent/javascript.vim",
