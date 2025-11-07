@@ -2,12 +2,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 #
-# This config file uses keycodes (bindsym) and was written for the QWERTY
-# layout.
-#
-# To get a config file with the same key positions, but for your current
-# layout, use the i3-config-wizard
-#
+# This config file uses keycodes (bindsym).
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -55,16 +50,16 @@ bindsym $mod+r exec --no-startup-id dmenu_run
 # bindsym $mod+d exec "rofi -modi drun,run -show drun"
 
 # change focus
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+i focus left
+bindsym $mod+a focus down
+bindsym $mod+u focus up
+bindsym $mod+n focus right
 
 # move focused window
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+i move left
+bindsym $mod+Shift+a move down
+bindsym $mod+Shift+u move up
+bindsym $mod+Shift+n move right
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -72,7 +67,7 @@ bindsym $mod+v split v
 bindsym $mod+z split h
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+bindsym $mod+w layout stacking
 bindsym $mod+d layout default
 
 # change focus between tiling / floating windows
@@ -81,22 +76,22 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+space floating toggle
 
 # switch to workspace
-bindsym $mod+1 workspace number 1
-bindsym $mod+2 workspace number 2
-bindsym $mod+3 workspace number 3
-bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number 5
-bindsym $mod+6 workspace number 6
+bindsym $mod+h workspace number 1
+bindsym $mod+t workspace number 2
+bindsym $mod+s workspace number 3
+bindsym $mod+f workspace number 4
+bindsym $mod+c workspace number 5
+bindsym $mod+g workspace number 6
 bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number 1
-bindsym $mod+Shift+2 move container to workspace number 2
-bindsym $mod+Shift+3 move container to workspace number 3
-bindsym $mod+Shift+4 move container to workspace number 4
-bindsym $mod+Shift+5 move container to workspace number 5
-bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+h move container to workspace number 1
+bindsym $mod+Shift+t move container to workspace number 2
+bindsym $mod+Shift+s move container to workspace number 3
+bindsym $mod+Shift+f move container to workspace number 4
+bindsym $mod+Shift+c move container to workspace number 5
+bindsym $mod+Shift+g move container to workspace number 6
 bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 
@@ -108,15 +103,3 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bar {
         status_command i3status
 }
-
-#######################################################################
-# automatically start i3-config-wizard to offer the user to create a
-# keysym-based config which used their favorite modifier (alt or windows)
-#
-# i3-config-wizard will not launch if there already is a config file
-# in ~/.config/i3/config (or $XDG_CONFIG_HOME/i3/config if set) or
-# ~/.i3/config.
-#
-# Please remove the following exec line:
-#######################################################################
-exec i3-config-wizard
