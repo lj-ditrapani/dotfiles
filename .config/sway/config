@@ -17,16 +17,16 @@ bindsym $mod+q kill
 bindsym $mod+r exec wofi --show run
 
 # Move your focus around
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+i focus left
+bindsym $mod+a focus down
+bindsym $mod+u focus up
+bindsym $mod+n focus right
 
 # Move the focused window with the same, but add Shift
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+i move left
+bindsym $mod+Shift+a move down
+bindsym $mod+Shift+u move up
+bindsym $mod+Shift+n move right
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -34,7 +34,7 @@ bindsym $mod+v split v
 bindsym $mod+z split h
 
 # change container layout (stacked, tabbed, default)
-bindsym $mod+s layout stacking
+bindsym $mod+w layout stacking
 bindsym $mod+d layout default
 
 # change focus between tiling / floating windows
@@ -43,22 +43,22 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+space floating toggle
 
 # Switch to workspace
-bindsym $mod+1 workspace number 1
-bindsym $mod+2 workspace number 2
-bindsym $mod+3 workspace number 3
-bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number 5
-bindsym $mod+6 workspace number 6
+bindsym $mod+h workspace number 1
+bindsym $mod+t workspace number 2
+bindsym $mod+s workspace number 3
+bindsym $mod+f workspace number 4
+bindsym $mod+c workspace number 5
+bindsym $mod+g workspace number 6
 bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 
 # Move focused container to workspace
-bindsym $mod+exclam move container to workspace number 1
-bindsym $mod+at move container to workspace number 2
-bindsym $mod+numbersign move container to workspace number 3
-bindsym $mod+dollar move container to workspace number 4
-bindsym $mod+percent move container to workspace number 5
-bindsym $mod+asciicircum move container to workspace number 6
+bindsym $mod+Shift+h move container to workspace number 1
+bindsym $mod+Shift+t move container to workspace number 2
+bindsym $mod+Shift+s move container to workspace number 3
+bindsym $mod+Shift+f move container to workspace number 4
+bindsym $mod+Shift+c move container to workspace number 5
+bindsym $mod+Shift+g move container to workspace number 6
 bindsym $mod+ampersand move container to workspace number 7
 bindsym $mod+asterisk move container to workspace number 8
 
