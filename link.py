@@ -17,6 +17,7 @@ files = [
     ".docker/config.json",
     ".gnupg/gpg-agent.conf",
     ".config/aerospace/aerospace.toml",
+    ".config/karabiner/karabiner.json",
     ".config/nvim/indent/coffee.vim",
     ".config/nvim/indent/java.vim",
     ".config/nvim/indent/javascript.vim",
