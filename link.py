@@ -9,6 +9,7 @@ files = [
     ".zprofile",
     ".gitconfig",
     ".config/kitty/kitty.conf",
+    ".config/alacritty/alacritty.toml",
     ".config/nvim/init.vim",
     ".config/helix/config.toml",
     ".config/helix/languages.toml",
