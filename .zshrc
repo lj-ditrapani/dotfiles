@@ -13,6 +13,7 @@ alias grep='grep --color=auto'
 alias gst='git status -u'
 alias vim='nvim'
 alias calh="ncal -b3"
+alias email='echo "jonathan.ditrapani@assured.claims"'
 
 bindkey "^R" history-incremental-search-backward
 
