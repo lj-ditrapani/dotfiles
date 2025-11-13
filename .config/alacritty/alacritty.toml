@@ -1,6 +1,33 @@
+[window]
+decorations = "Full"
+
+[colors.primary]
+foreground = "#839496"
+background = "#002b36"
+
+[colors.normal]
+black = "#073642"
+red = "#dc322f"
+green =  "#859900"
+yellow =  "#b58900"
+blue =  "#268bd2"
+magenta =  "#d33682"
+cyan =  "#2aa198"
+white =  "#eee8d5"
+
 [font]
-size = 12.0
+size = 16.0
 
 [font.normal]
-family = "Menlo"
+family="DejaVuSansM Nerd Font Mono"
 style = "Regular"
+[font.bold]
+family="DejaVuSansM Nerd Font Mono"
+style = "Bold"
+[font.italic]
+family="DejaVuSansM Nerd Font Mono"
+style = "Italic"
+[font.bold_italic]
+family="DejaVuSansM Nerd Font Mono"
+style = "Bold Italic"
+
