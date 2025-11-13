@@ -5,6 +5,11 @@ Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'rust-lang/rust.vim'
 Plug 'udalov/kotlin-vim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
+Plug 'cocopon/iceberg.vim'
+Plug 'rose-pine/neovim', { 'as': 'rose-pine' }
+Plug 'junegunn/seoul256.vim'
 call plug#end()
 
 set nu              " show line numbers
@@ -25,6 +30,8 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,default,latin1
 set directory=~/.vim/swap,.
+set termguicolors
+colorscheme iceberg
 syntax on
 autocmd BufNewFile,BufRead Jakefile set filetype=javascript
 autocmd BufNewFile,BufRead *.adoc setf asciidoc
