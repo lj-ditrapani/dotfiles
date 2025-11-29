@@ -23,4 +23,4 @@ set -x SDKMAN_DIR "$HOME/.sdkman"
 set -x PYENV_ROOT "$HOME/.pyenv"
 fish_add_path $PYENV_ROOT/bin $HOME/.local/bin
 
-# zoxide init fish | source
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
