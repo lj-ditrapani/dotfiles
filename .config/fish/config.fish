@@ -15,3 +15,11 @@ alias ssh-agent-start='ssh-agent -c -t 2h > "$XDG_RUNTIME_DIR/ssh-agent.env"'
 if test -f "$XDG_RUNTIME_DIR"/ssh-agent.env
     source "$XDG_RUNTIME_DIR/ssh-agent.env"
 end
+
+alias pyenvinit='eval "$(pyenv init -)"'
+alias opaminit='eval $(opam env)'
+
+set -x NVM_DIR "$HOME/.nvm"
+set -x SDKMAN_DIR "$HOME/.sdkman"
+set -x PYENV_ROOT "$HOME/.pyenv"
+fish_add_path $PYENV_ROOT/bin $HOME/.local/bin
