@@ -14,6 +14,7 @@ files = [
     ".config/i3status/config",
     ".config/kitty/kitty.conf",
     ".config/nvim/init.vim",
+    ".config/fish/config.fish",
     ".config/user-dirs.dirs",
     ".gnupg/gpg-agent.conf",
     ".config/nvim/indent/coffee.vim",

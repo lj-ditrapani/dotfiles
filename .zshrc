@@ -53,3 +53,4 @@ alias ssh-agent-start='ssh-agent -t 2h > "$XDG_RUNTIME_DIR/ssh-agent.env"'
 if [ -f $XDG_RUNTIME_DIR/ssh-agent.env ]; then
     source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 fi
+eval "$(uv generate-shell-completion zsh)"
