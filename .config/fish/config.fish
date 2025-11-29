@@ -11,6 +11,7 @@ alias disableLaptopMonitor="swaymsg output eDP-1 disable"
 alias enableLaptopMonitor="swaymsg output eDP-1 enable"
 alias mirrormonitor="xrandr --output HDMI-0 --same-as DP-2"
 
-#if test -f "$XDG_RUNTIME_DIR"/ssh-agent.env
-#    source "$XDG_RUNTIME_DIR/ssh-agent.env"
-#end
+alias ssh-agent-start='ssh-agent -c -t 2h > "$XDG_RUNTIME_DIR/ssh-agent.env"'
+if test -f "$XDG_RUNTIME_DIR"/ssh-agent.env
+    source "$XDG_RUNTIME_DIR/ssh-agent.env"
+end
