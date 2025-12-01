@@ -21,6 +21,4 @@ alias opaminit='eval $(opam env)'
 set -x SDKMAN_DIR "$HOME/.sdkman"
 fish_add_path $HOME/.local/bin $HOME/.local/kitty.app/bin/
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-fnm env --shell fish | source
+eval "$(/opt/homebrew/bin/brew shellenv)"
