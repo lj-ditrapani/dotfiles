@@ -15,6 +15,7 @@ files = [
     ".config/kitty/kitty.conf",
     ".config/nvim/init.vim",
     ".config/helix/config.toml",
+    ".config/helix/languages.toml",
     ".config/fish/config.fish",
     ".config/user-dirs.dirs",
     ".gnupg/gpg-agent.conf",
