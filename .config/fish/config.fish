@@ -21,6 +21,6 @@ alias opaminit='eval $(opam env)'
 
 set -x SDKMAN_DIR "$HOME/.sdkman"
 set -x PYENV_ROOT "$HOME/.pyenv"
-fish_add_path $PYENV_ROOT/bin $HOME/.local/bin
+fish_add_path $PYENV_ROOT/bin $HOME/.local/bin $HOME/.local/kitty.app/bin/
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
