@@ -11,3 +11,14 @@ theme = 'catppuccin_frappe'
 "right" = "goto_line_end"
 "up" = "move_line_up"
 "down" = "move_line_down"
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace]
+render = "all"
