@@ -13,7 +13,7 @@ files = [
     ".config/i3/config",
     ".config/i3status/config",
     ".config/kitty/kitty.conf",
-    ".config/nvim/init.vim",
+    ".config/nvim/init.lua",
     ".config/helix/config.toml",
     ".config/helix/languages.toml",
     ".config/fish/config.fish",
