@@ -3,7 +3,7 @@
     email = lj.ditrapani@gmail.com
 	signingkey = B84FC5E9A74B2362C1CB0329B051A1E0D3D8AAE5
 [core]
-    editor = hx
+    editor = nvim
 [push]
     default = simple
 [pull]

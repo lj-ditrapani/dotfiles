@@ -4,7 +4,7 @@ alias l='ls -FXC --color'
 alias ll='l -Ahl'
 alias grep='grep --color=auto'
 alias gst='git status -u'
-alias vim='hx'
+alias vim='nvim'
 alias calh="ncal -b3"
 
 alias disableLaptopMonitor="swaymsg output eDP-1 disable"
