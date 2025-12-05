@@ -13,19 +13,11 @@ files = [
     ".config/i3/config",
     ".config/i3status/config",
     ".config/kitty/kitty.conf",
-    ".config/nvim/init.lua",
     ".config/helix/config.toml",
     ".config/helix/languages.toml",
     ".config/fish/config.fish",
     ".config/user-dirs.dirs",
     ".gnupg/gpg-agent.conf",
-    ".config/nvim/indent/coffee.vim",
-    ".config/nvim/indent/java.vim",
-    ".config/nvim/indent/javascript.vim",
-    ".config/nvim/indent/kotlin.vim",
-    ".config/nvim/indent/markdown.vim",
-    ".config/nvim/indent/ruby.vim",
-    ".config/nvim/indent/typescript.vim",
 ]
 dirs = set(filter(lambda d: str(d) != ".", map(lambda file: Path(file).parent, files)))
 dirs.add(Path(".vim/swap"))
