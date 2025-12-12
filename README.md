@@ -9,25 +9,16 @@ My personal dotfiles. Simply simlinks the config files to the home directory.
 
 ## dev setup
 
-- Make sure pyenv is initialized. You may already have this is your bashrc.
+- Install the python version defined in `pyproject.toml`,
+  create virtual environment and
+  install dependencies (one time only)
     ```commandline
-    eval "$(pyenv init -)"
+   uv sync 
     ```
-- Install the python version defined in `.python-version` (one time only)
+- Activate the virtual environment (use what works for your shell)
     ```commandline
-    pyenv install
-    ```
-- Create a new python virtual environment (one time only)
-    ```commandline
-    python -m venv env
-    ```
-- Activate the virtual environment
-    ```commandline
-    source env/bin/activate
-    ```
-- Install dev requirements
-    ```commandline
-    pip install -r dev-requirements.txt
+    source .venv/bin/activate
+    source .venv/bin/activate.fish
     ```
 
 
@@ -37,7 +28,7 @@ My personal dotfiles. Simply simlinks the config files to the home directory.
     ```commandline
     mypy --strict link.py
     ```
-- Format src with black!
+- Format src with ruff!
     ```commandline
-    black link.py
+    ruff format
     ```
