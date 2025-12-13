@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-files_dir = Path(__file__).parent / "source-config-files"
+files_dir = Path(__file__).parent / "source"
 files = [file.relative_to(files_dir) for file in files_dir.rglob("*") if file.is_file()]
 dirs = set(filter(lambda d: str(d) != ".", map(lambda file: file.parent, files)))
 dirs.add(Path(".vim/swap"))
