@@ -16,7 +16,7 @@ alias calh="ncal -b3"
 
 bindkey "^R" history-incremental-search-backward
 
-# Turn on and off mouspad
+# Turn on and off touchpad
 # xinput list  # Get a list of input devices
 alias tpoff="synclient TouchpadOff=1"
 alias tpon="synclient TouchpadOff=0"

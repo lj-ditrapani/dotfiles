@@ -1,7 +1,7 @@
 LJD dotfiles
 ===============================================================================
 
-My personal dotfiles. Simply simlinks the config files to the home directory.
+My personal dotfiles. Simply symlinks the config files to the home directory.
 
     git clone git@github.com:lj-ditrapani/dotfiles.git
     ./dotfiles/link.py
@@ -13,7 +13,7 @@ My personal dotfiles. Simply simlinks the config files to the home directory.
   create virtual environment and
   install dependencies (one time only)
     ```commandline
-   uv sync 
+    uv sync
     ```
 - Activate the virtual environment (use what works for your shell)
     ```commandline

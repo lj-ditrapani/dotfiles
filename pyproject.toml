@@ -1,7 +1,7 @@
 [project]
 name = "dotfiles"
 version = "0.1.0"
-description = "My personal dotfiles. Simply simlinks the config files to the home directory."
+description = "My personal dotfiles. Simply symlinks the config files to the home directory."
 readme = "README.md"
 requires-python = ">=3.14.2"
 dependencies = [
