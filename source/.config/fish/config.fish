@@ -22,3 +22,5 @@ set -x SDKMAN_DIR "$HOME/.sdkman"
 fish_add_path $HOME/.local/bin $HOME/.local/kitty.app/bin/
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+fnm env --shell fish | source
