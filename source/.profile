@@ -13,3 +13,4 @@ fi
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
   PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
 fi
+. "$HOME/.cargo/env"
