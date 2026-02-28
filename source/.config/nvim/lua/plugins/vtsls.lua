@@ -9,13 +9,6 @@ return {
               maxTsServerMemory = 12400,
             },
           },
-          vtsls = {
-            experimental = {
-              completion = {
-                enableServerSideFuzzyMatch = true,
-              },
-            },
-          },
         },
       },
     },
