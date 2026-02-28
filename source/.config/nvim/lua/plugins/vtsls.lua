@@ -6,7 +6,14 @@ return {
         settings = {
           typescript = {
             tsserver = {
-              maxTsServerMemory = 11264,
+              maxTsServerMemory = 12400,
+            },
+          },
+          vtsls = {
+            experimental = {
+              completion = {
+                enableServerSideFuzzyMatch = true,
+              },
             },
           },
         },
